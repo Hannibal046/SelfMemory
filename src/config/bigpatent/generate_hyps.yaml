@@ -1,0 +1,10 @@
+data_path: ../data/bigpatent/test.jsonl
+src: document
+trg: summary
+per_device_eval_batch_size: 1
+accelerator: gpu
+train_max_src_len: 1024
+train_max_trg_len: 256
+gen_max_len: 256
+length_penalty: 0.8
+num_beams: 5

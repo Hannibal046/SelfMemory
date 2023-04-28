@@ -1,0 +1,33 @@
+## path
+data_dir: ../data/bigpatent
+pretrained_model_path: ../pretrained_model/bart_large
+default_root_dir: ../results/generator/bigpatent/bart_large
+memory_dir: null
+memory_encoding: concate
+src: document
+trg: summary
+## training
+## on 4 cards
+max_epochs: 20
+per_device_train_batch_size: 12
+accumulate_grad_batches: 4
+per_device_eval_batch_size: 12
+lr: 5.0e-3
+warmup_steps: 10000
+accelerator: gpu
+val_check_interval: 1.0
+label_smoothing_factor: 0.1
+gradient_clip_val: 1.0
+weight_decay: 0
+train_max_src_len: 1024
+train_max_trg_len: 256
+logging_steps: 100
+eval_metrics: rouge1
+seed: 980406
+enable_progress_bar: false
+## generation
+gen_max_len: 256
+gen_min_len: 34
+num_beams: 8
+length_penalty: 0.7
+
