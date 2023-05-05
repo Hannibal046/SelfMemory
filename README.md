@@ -8,7 +8,7 @@
 </div>
 
 
-This repository contains the source code for this paper [Lift Yourself Up: Retrieval-augmented Text Generation with Self Memory]().
+This repository contains the source code for this paper [Lift Yourself Up: Retrieval-augmented Text Generation with Self Memory](https://arxiv.org/abs/2305.02437).
 
 With direct access to human-written reference as memory, retrieval-augmented generation has achieved much progress in a wide range of text generation tasks. Since better memory would typically prompt better generation (we define this as __primal problem__), previous works mainly focus on how to retrieve better memory.
 
