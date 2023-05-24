@@ -504,4 +504,4 @@ if __name__ == "__main__":
         trainer.fit(model)
         trainer.test()
     else:
-        trainer.test(model)
+        trainer.test(model,ckpt='best')
